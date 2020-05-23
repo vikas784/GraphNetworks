@@ -1,0 +1,19 @@
+import numpy as np
+import pandas as pd
+import networkx as nx
+from SDNE import SDNE
+import tensorflow as tf
+from sklearn.
+
+
+Classifying_Model:
+  
+
+  def __init__(self,Labelled_embedding,Train_label,Unlabelled_embedding):
+    self.Labelled_embedding = Labelled_embedding
+    self.Train_label = Train_label
+    self.Unlabelled_embedding = Unlabelled_embedding
+    self.Data = {
+                   "X": self.Labelled_embedding,
+                   "Y": self.Train_label
+                  }
